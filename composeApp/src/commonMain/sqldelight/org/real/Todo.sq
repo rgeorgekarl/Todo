@@ -1,0 +1,18 @@
+CREATE TABLE Todo (
+id Integer PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+description TEXT
+);
+-- insert 4 data
+INSERT INTO Todo (name, description) VALUES ('Todo 1', 'Description 1');
+INSERT INTO Todo (name, description) VALUES ('Todo 2', 'Description 2');
+INSERT INTO Todo (name, description) VALUES ('Todo 3', 'Description 3');
+INSERT INTO Todo (name, description) VALUES ('Todo 4', 'Description 4');
+
+-- select all data
+selectAll:
+SELECT * FROM Todo;
+
+-- insert data
+insertData:
+INSERT INTO Todo (name, description) VALUES (?, ?);
